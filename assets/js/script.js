@@ -1,7 +1,7 @@
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-prompt ("testing");
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -10,6 +10,15 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
+function generatePassword () {
+  var superSecretPass;
+  var pizza = confirm("Do you like pizza?");
+  // This is where the challenge for this should happen
+
+  return pizza;
+}
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
