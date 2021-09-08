@@ -12,11 +12,18 @@ function writePassword() {
 }
 
 function generatePassword () {
-  var superSecretPass;
-  var pizza = confirm("Do you like pizza?");
-  // This is where the challenge for this should happen
+  // var superSecretPass;
+  // var pizza = confirm("Do you like pizza?");
+  // // This is where the challenge for this should happen. confirm gets you prompts
+  var passLength = prompt("How many characters? Must be between 8 and 128");
+  var lowerCase = confirm("Use lower case letters?");
+  var upperCase = confirm("Use upper case letters?");
+  var useNumber = confirm("Use numbers?");
+  var useSymbol = confirm("Use symbols?");
 
-  return pizza;
+
+
+  // return pizza;
 }
 
 
