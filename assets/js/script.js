@@ -11,18 +11,21 @@ function writePassword() {
 
 }
 
+
+
 function generatePassword() {
   // var superSecretPass;
   // var pizza = confirm("Do you like pizza?");
   // // This is where the challenge for this should happen. confirm gets you prompts
-  var myPassword = (lengthOfPass + lowerCase + upperCase + useNumber + useSymbol)
+  var myPassword = "";
   var lengthOfPass = prompt("How many characters? Must be between 8 and 128");
   if (8 > lengthOfPass || lengthOfPass > 128) {
     alert("Password must be between 8 and 128 characters.");
     return;
-  } else {
-    lengthOfPass.length
   }
+  console.log(lengthOfPass)
+
+
 
   var lowerCase = confirm("Use lower case letters?");
   if (lowerCase) {
@@ -40,7 +43,11 @@ function generatePassword() {
   if (useSymbol) {
     getRandomSymbol();
   }
-
+  
+  for ( var i = 0; i < lengthOfPass; i++ ) {
+    result += characters.charAt(Math.floor(Math.random() * 
+charactersLength));
+ }
 
   return myPassword;
 
