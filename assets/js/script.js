@@ -21,7 +21,9 @@ function generatePassword () {
   var useNumber = confirm("Use numbers?");
   var useSymbol = confirm("Use symbols?");
 
-    
+    if (passLength < 8 && passLength > 128) {
+      
+    }
 
 
 
