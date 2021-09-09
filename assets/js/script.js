@@ -46,12 +46,12 @@ function generatePassword() {
   
   for ( var i = 0; i < lengthOfPass; i++ ) {
     result += characters.charAt(Math.floor(Math.random() * 
-charactersLength));
+lengthOfPass));
  }
 
   return myPassword;
 
-
+}
 
 
   function getRandomLower() {
@@ -71,7 +71,7 @@ charactersLength));
     const symbols = '!@#$%^&*(){}[]=<>/,.'
     return symbols[Math.floor(Math.random() * symbols.length)];
   }
-}
+
 
 // return pizza;
 
