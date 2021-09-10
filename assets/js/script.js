@@ -54,9 +54,7 @@ function generatePassword() {
   }
   console.log(passComponents)
 
-  if(passComponents = []) {
-    alert("You need something to make your password!")
-  }
+  
 
   // If statement actually gets the password from the array?
 
@@ -64,6 +62,13 @@ function generatePassword() {
     myPassword += passComponents[Math.floor(Math.random() * passComponents.length)];
   }
   console.log(myPassword)
+
+  // if(passComponents = []) {
+  //   alert("You need something to make your password!");
+  // } else {
+
+  // }
+
   return myPassword;
 
 }
