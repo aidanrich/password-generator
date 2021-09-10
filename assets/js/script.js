@@ -54,29 +54,23 @@ function generatePassword() {
   }
   console.log(passComponents)
 
-  
+  // needs work
+  if ((lowerCaseConfirm = false) && (upperCaseConfirm = false) && (useNumberConfirm = false) && (useSymbolConfirm = false)) {
+    alert("You need something to make your password!");
+  }
 
-  // If statement actually gets the password from the array?
+
+  // For statement actually gets the password from the arrays!
 
   for (var i = 0; i < lengthOfPass; i++) {
     myPassword += passComponents[Math.floor(Math.random() * passComponents.length)];
   }
   console.log(myPassword)
 
-  // if(passComponents = []) {
-  //   alert("You need something to make your password!");
-  // } else {
-
-  // }
 
   return myPassword;
 
 }
-
-
-
-
-
 
 
 
