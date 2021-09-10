@@ -31,6 +31,7 @@ function generatePassword() {
 
   var passComponents = []
 
+  // concat arrays!
   var lowerCaseConfirm = confirm("Use lower case letters?");
   if (lowerCaseConfirm) {
     passComponents = passComponents.concat(randomLower)
@@ -53,6 +54,8 @@ function generatePassword() {
   }
   console.log(passComponents)
 
+  // If statement actually gets the password from the array?
+  
   for (var i = 0; i < lengthOfPass; i++) {
     myPassword += passComponents[Math.floor(Math.random() * passComponents.length)];
   }
