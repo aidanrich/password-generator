@@ -58,6 +58,7 @@ function generatePassword() {
   // needs work
   if ((lowerCaseConfirm === false) && (upperCaseConfirm === false) && (useNumberConfirm === false) && (useSymbolConfirm === false)) {
     alert("You need something to make your password!");
+    return;
   }
 
 
