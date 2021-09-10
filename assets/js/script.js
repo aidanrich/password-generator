@@ -29,6 +29,7 @@ function generatePassword() {
   }
   console.log(lengthOfPass)
 
+    // need empty array
   var passComponents = []
 
   // concat arrays!
@@ -55,7 +56,7 @@ function generatePassword() {
   console.log(passComponents)
 
   // needs work
-  if ((lowerCaseConfirm = false) && (upperCaseConfirm = false) && (useNumberConfirm = false) && (useSymbolConfirm = false)) {
+  if ((lowerCaseConfirm === false) && (upperCaseConfirm === false) && (useNumberConfirm === false) && (useSymbolConfirm === false)) {
     alert("You need something to make your password!");
   }
 
