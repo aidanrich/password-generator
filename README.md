@@ -1,5 +1,7 @@
 # password-generator
 
-credits: https://www.youtube.com/watch?v=duNmhKgtcsI arrays
+credits: How to combine arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
 
-        https://codepen.io/FlorinPop17/pen/BaBePej arrays and code
+        Based most of my script on this for the 'for' statement: https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
+
+
