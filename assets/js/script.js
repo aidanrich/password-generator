@@ -20,7 +20,7 @@ var randomSymbols = ["!", "#", "$", "%", "&", "(", ")", "*", "+", ",", "-", ".",
 
 function generatePassword() {
 
-  // // This is where the challenge for this should happen. confirm gets you prompts
+  // // This is where the work for this assignment should happen. confirm gets you prompts
   var myPassword = "";
   var lengthOfPass = prompt("How many characters? Must be between 8 and 128");
   if (8 > lengthOfPass || lengthOfPass > 128) {
@@ -54,8 +54,12 @@ function generatePassword() {
   }
   console.log(passComponents)
 
+  if(passComponents = []) {
+    alert("You need something to make your password!")
+  }
+
   // If statement actually gets the password from the array?
-  
+
   for (var i = 0; i < lengthOfPass; i++) {
     myPassword += passComponents[Math.floor(Math.random() * passComponents.length)];
   }
