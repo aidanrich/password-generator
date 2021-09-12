@@ -40,7 +40,7 @@ function generatePassword() {
 
   var upperCaseConfirm = confirm("Use upper case letters?");
   if (upperCaseConfirm) {
-    passComponents = passComponents.concat(randomLower)
+    passComponents = passComponents.concat(randomUpper)
   }
 
 
